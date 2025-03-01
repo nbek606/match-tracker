@@ -22,7 +22,7 @@ export const MatchTrackerHeader: FC<IMatchTrackerHeaderProps> = ({ error, onApiC
                     error &&
                     <div className="match__tracker-header__error">
                         <img src={ErrorIcon} alt="error" />
-                        <span>Ошибка: не удалось загрузить информацию</span>
+                        <span>{error}</span>
                     </div>
                 }
                 <Button
