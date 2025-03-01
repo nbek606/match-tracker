@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, memo} from "react";
 import {MatchStatus} from "../model/matchTrackerTypes.ts";
 import CommandIcon from "@/shared/svg/command.svg";
 
@@ -11,7 +11,7 @@ interface IMatchTrackerListItemProps {
 }
 
 
-export const MatchTrackerCard: FC<IMatchTrackerListItemProps> = ({ awayPlace, homePlace, awayScore, homeScore, status }) => {
+export const MatchTrackerCard: FC<IMatchTrackerListItemProps> = memo(({ awayPlace, homePlace, awayScore, homeScore, status }) => {
     return (
         <div className="match__tracker-card">
             <div className="match__tracker-card__first">
@@ -41,4 +41,4 @@ export const MatchTrackerCard: FC<IMatchTrackerListItemProps> = ({ awayPlace, ho
             </div>
         </div>
     )
-}
+})

@@ -2,7 +2,7 @@ import './MatchTracker.scss';
 import {MatchTrackerHeader} from "./MatchTrackerHeader.tsx";
 import {MatchTrackerList} from "./MatchTrackerList.tsx";
 import {useEffect} from "react";
-import {fetchMatchTrackerApi} from "@/modules/match-tracker/model/matchTrackerApi.ts";
+import {fetchMatchTrackerApi} from "../model/matchTrackerApi.ts";
 import {useAppDispatch, useAppSelector} from "@/store";
 import {CircularProgress} from "@mui/material";
 
