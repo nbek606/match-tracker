@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@each $value, $index in $colors {
+  .bg-#{$value} {
+    background-color: $index;
+  }
+}
