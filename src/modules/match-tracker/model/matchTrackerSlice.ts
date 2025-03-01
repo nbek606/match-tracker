@@ -28,6 +28,7 @@ export const matchTrackerSlice = createSlice({
             .addCase(fetchMatchTrackerApi.fulfilled, (state, action: PayloadAction<IMatchTracker>) => {
                 state.isLoading = false
                 state.listMatch = action.payload.matches
+                state.error = ''
             })
             .addCase(fetchMatchTrackerApi.rejected, (state) => {
                 state.isLoading = false
